@@ -46,11 +46,12 @@ p{margin:0 0 1em}
 .top-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
 .logo img{height:36px;width:auto}
 .nav{display:none}
-.nav a{color:var(--ink-2);text-decoration:none;font-weight:600;font-size:.95rem;padding:.4em .2em}
+.nav a{white-space:nowrap;color:var(--ink-2);text-decoration:none;font-weight:600;font-size:.95rem;padding:.4em .2em}
 .nav a:hover{color:var(--green)}
 .top .btn span{display:none}
 @media(min-width:420px){.top .btn span{display:inline}}
-@media(min-width:960px){.nav{display:flex;gap:22px}.logo img{height:40px}}
+@media(min-width:960px){.logo img{height:40px}}
+@media(min-width:1100px){.nav{display:flex;gap:20px}}
 
 /* hero */
 .hero{position:relative;overflow:hidden;padding:36px 0 28px;background:
@@ -78,7 +79,7 @@ h1 mark{background:linear-gradient(transparent 62%,var(--sun) 62%,var(--sun) 92%
 @media(min-width:900px){.hero{padding:64px 0 40px}.hero-in{grid-template-columns:1.02fr 1fr;gap:48px}}
 
 /* seções */
-.sec{padding:64px 0}
+.sec{padding:64px 0;scroll-margin-top:64px}
 .sec-white{background:#fff}
 .kicker{font:700 .8rem var(--fh);text-transform:uppercase;letter-spacing:.14em;color:var(--green);margin-bottom:.6em}
 .sub{color:var(--muted);font-size:1.06rem;max-width:44em;margin-bottom:32px}
@@ -167,6 +168,19 @@ h1 mark{background:linear-gradient(transparent 62%,var(--sun) 62%,var(--sun) 92%
 .plan-cc h4{font-size:1rem;margin-top:8px}
 .extras li b{color:var(--ink)}
 .bonus{margin-top:22px;padding:16px 18px;background:var(--sun-l);border-radius:14px;color:var(--ink)}
+
+/* outros serviços */
+.others{list-style:none;padding:0;margin:0}
+@media(min-width:640px){.others{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.others{grid-template-columns:repeat(3,1fr)}}
+.others li{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.others .oi{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:#fff;border:1px solid var(--line);font-size:1.25rem}
+.others h3{font-size:1rem;margin:2px 0 4px}
+.others p{margin:0;color:var(--ink-2);font-size:.93rem;line-height:1.5}
+.others-cta{margin-top:24px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between;background:var(--ink);color:#E9EDF3;border-radius:18px;padding:20px 22px}
+.others-cta p{margin:0;font-size:1.08rem}
+.others-cta strong{color:var(--sun)}
+.faq{background:transparent}
 
 /* faq */
 .faq details{border-bottom:1px solid var(--line);padding:4px 0}
