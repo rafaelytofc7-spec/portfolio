@@ -1,0 +1,5 @@
+# Fontes de trabalho e prints de revisão ficam só no computador
+_*
+_*/
+*.py
+.DS_Store
